@@ -1,7 +1,10 @@
-app.controller("rate",function($scope){
-	$scope.opt = 0;
+app.controller("rate",function($scope,$location){
+	$scope.opt = 10;
 	$scope.norm = 0;
 	$scope.pes = 0;
-	$scope.mid_rate =($scope.opt+4*$scope.norm+$scope.pes)/6;
-	$scope.dif_rate =($scope.pes-$scope.opt)/6;
+	//$scope.baseUrl = $location.abcUrl();
+	$scope.mid_rate = function(){
+		return ($scope.opt+4*$scope.norm+$scope.pes)/6};
+	$scope.dif_rate = function(){
+		return ($scope.pes-$scope.opt)/6};
 })
