@@ -3,34 +3,65 @@
 <meta charset="utf-8">
 <head>
 	<title>Perk</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/datatables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/angular-datatables.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
 		PERK{{1+1}}
 	</header>
-	<div class="content">
+	<div class="content" ng-controller="rate">
 	<form>
 		<fieldset>
 			<label for="optimistic">
 				Оптимистическая отценка
-				<input type="text" name="optimistic" ng-model="opt">
+				<input type="number" name="optimistic" ng-model="opt">
 			</label>
 			<label for="normal">
 				Нормальная отценка
-				<input type="text" name="normal" ng-model="norm">
+				<input type="number" name="normal" ng-model="norm">
 			</label> 
 			<label for="pesemistic">
 				Пессиместическая отценка
-				<input type="text" name="pesemistic" ng-model="pes">
+				<input type="number" name="pesemistic" ng-model="pes">
 			</label>  			
 		</fieldset>
 	</form>
 	<div class="result">
-		{{opt+4*norm+pes}}
+		<div>{{opt}}</div>
+		<div>{{dif_rate}}</div>
 	</div>
+	<h1>Таблица расчета предварительной отценки времени выполнения проекта</h1>
+<div class="col-sm-6">
+  <table class="table table-striped table-bordered" datatable="ng" dt-options="vm.dtOptions" dt-instance="vm.dtInstance"  width="100%" dt-column-defs="vm.dtColumnDefs">
+    <thead>
+      <tr><th>№</th><th>Название проекта</th><th>Оптимиская отценка</th><th>Нормальная отценка</th><th>Песимистическая отценка</th><th>Среднее время</th><th>Отклонение</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in userList">
+        <td>{{$index + 1}}</td>
+        <td>
+          {{user.employee_name}}
+        </td>
+        <td>{{user.employee_age}}</td>
+		 <td>{{user.employee_salary}}</td>
+		<td><div class="btn-group">
+                <button type="button" class="btn btn-default btn" ng-click="edit($index);"><i class="glyphicon glyphicon-pencil"></i></button>  
+                <button type="button" class="btn btn-default btn" ng-click="delete();"><i class="glyphicon glyphicon-trash"></i></button> 
+            </div></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 	</div>
 	<script type="text/javascript" src="js/angular/js/angular.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/datatables.min.js"></script>
+	<script type="text/javascript" src="js/angular-datatables.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controller/rate.js"></script>
 </body>
 </html>
