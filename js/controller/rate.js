@@ -1,5 +1,5 @@
 app.controller("rate",function($scope,$location){
-	$scope.opt = 10;
+	$scope.opt = 0;
 	$scope.norm = 0;
 	$scope.pes = 0;
 	//$scope.baseUrl = $location.abcUrl();
