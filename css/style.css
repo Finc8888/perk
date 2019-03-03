@@ -1,0 +1,7 @@
+input{
+	display: block;
+}
+form{
+	display: inline-block;
+	/*width: 50vw;*/
+}

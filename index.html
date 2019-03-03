@@ -1,9 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='app'>
+<meta charset="utf-8">
 <head>
 	<title>Perk</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<h1>test</h1>
+	<header>
+		PERK{{1+1}}
+	</header>
+	<div class="content">
+	<form>
+		<fieldset>
+			<label for="optimistic">
+				Оптимистическая отценка
+				<input type="text" name="optimistic" ng-model="opt">
+			</label>
+			<label for="normal">
+				Нормальная отценка
+				<input type="text" name="normal" ng-model="norm">
+			</label> 
+			<label for="pesemistic">
+				Пессиместическая отценка
+				<input type="text" name="pesemistic" ng-model="pes">
+			</label>  			
+		</fieldset>
+	</form>
+	<div class="result">
+		{{opt+4*norm+pes}}
+	</div>
+	</div>
+	<script type="text/javascript" src="js/angular/js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
