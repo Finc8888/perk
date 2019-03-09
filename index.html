@@ -10,7 +10,13 @@
 </head>
 <body>
 	<header>
-		PERK{{1+1}}
+		<div class="logo">
+			<span class="ferz">&#9813;</span>
+			<span class="green">P</span>
+			<span class="purple">E</span>
+			<span class="blue">R</span>
+			<span class="violet">K</span>
+		</div>
 	</header>
 	<div class="content" ng-controller="rate">
 	<form>
@@ -22,11 +28,11 @@
 			<label for="normal">
 				Нормальная отценка
 				<input type="number" name="normal" ng-model="norm">
-			</label> 
+			</label>
 			<label for="pesemistic">
 				Пессиместическая отценка
 				<input type="number" name="pesemistic" ng-model="pes">
-			</label>  			
+			</label>
 		</fieldset>
 	</form>
 	<div class="result">
@@ -36,22 +42,49 @@
 	</div>
 	<h1>Таблица расчета предварительной отценки времени выполнения проекта</h1>
 <div class="col-sm-6">
-  <table class="table table-striped table-bordered" datatable="ng" dt-options="vm.dtOptions" dt-instance="vm.dtInstance"  width="100%" dt-column-defs="vm.dtColumnDefs">
+  <table class="row-border hover table table-striped table-bordered"
+				datatable="ng"
+				dt-options="vm.dtOptions"
+				dt-instance="vm.dtInstance"
+				width="100%"
+				dt-column-defs="vm.dtColumnDefs">
     <thead>
-      <tr><th>№</th><th>Название проекта</th><th>Оптимиская отценка</th><th>Нормальная отценка</th><th>Песимистическая отценка</th><th>Среднее время</th><th>Отклонение</th></tr>
+      <tr>
+				<th>№</th>
+				<th>Название проекта</th>
+				<th>Оптимиская отценка</th>
+				<th>Нормальная отценка</th>
+				<th>Песимистическая отценка</th>
+				<th>Среднее время</th>
+				<th>Отклонение</th>
+				<th>Редактирование</th>
+			</tr>
     </thead>
     <tbody>
-      <tr ng-repeat="user in userList">
-        <td>{{$index + 1}}</td>
-        <td>
-          {{user.employee_name}}
-        </td>
-        <td>{{user.employee_age}}</td>
-		 <td>{{user.employee_salary}}</td>
-		<td><div class="btn-group">
-                <button type="button" class="btn btn-default btn" ng-click="edit($index);"><i class="glyphicon glyphicon-pencil"></i></button>  
-                <button type="button" class="btn btn-default btn" ng-click="delete();"><i class="glyphicon glyphicon-trash"></i></button> 
-            </div></td>
+      <tr>
+        <td>{{1}}</td>
+				<td>{{project_name}}</td>
+				<td>{{opt}}</td>
+        <td>{{norm}}</td>
+        <td>{{pes}}</td>
+		 		<td>{{mid_rate()}}</td>
+		 		<td>{{dif_rate()}}</td>
+				<td>
+					<div class="btn-group">
+            <button
+							type="button"
+							class="btn btn-default btn"
+							ng-click="edit($index);">
+							<i class="glyphicon glyphicon-pencil"></i>
+						</button>
+            <button
+							type="button"
+							class="btn btn-default btn"
+							ng-click="delete();">
+							<i class="glyphicon glyphicon-trash"></i>
+						</button>
+          </div>
+				</td>
       </tr>
     </tbody>
   </table>
