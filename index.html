@@ -15,8 +15,9 @@
 			<span class="green">P</span>
 			<span class="purple">E</span>
 			<span class="blue">R</span>
-			<span class="violet">K</span>
+			<span class="orange">T</span>
 		</div>
+		<div class="full">Program Evaluation and Review Technique</div>
 	</header>
 	<div class="content" ng-controller="rate">
 	<form>
@@ -36,11 +37,11 @@
 		</fieldset>
 	</form>
 	<div class="result">
-		<div>{{mid_rate()}}</div>
-		<div>{{dif_rate()}}</div>
+		<div ng-cloak class="mid_rate">{{mid_rate()}}</div>
+		<div ng-cloak class="dif_rate">{{dif_rate()}}</div>
 		<!-- <div>{{baseUrl}}</div> -->
 	</div>
-	<h1>Таблица расчета предварительной отценки времени выполнения проекта</h1>
+	<p class="table_name">Таблица расчета предварительной отценки времени выполнения проекта</p>
 <div class="col-sm-6">
   <table class="row-border hover table table-striped table-bordered"
 				datatable="ng"

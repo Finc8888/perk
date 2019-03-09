@@ -20,13 +20,14 @@ form{
 	font-family: sans-serif;
 	color:blue;
 }
-.violet{
+.orange{
 	margin-right: 10px;
 	font-family: monospace;
 	color: #c55430;
 }
 
 header{
+	display: flex;
 	margin-bottom: 30px;
 	background-image: linear-gradient(#3c00ff,#00d2ff);
 	height:20vh;
@@ -41,7 +42,7 @@ header{
 	margin-top: 10px;
 	font-size: 65px;
 }
-.logo:hover .violet{
+.logo:hover .orange{
 	margin-top: 10px;
 	font-size: 65x;
 }
@@ -66,4 +67,44 @@ header{
 }
 .ferz{
 	color: black;
+}
+.full{
+	color:white;
+	font-size: 12px;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+.table_name{
+	font-size: 14px;
+	color: #6b1a1a;
+	margin-left: 20px;
+}
+.table{
+	overflow-x: auto;
+}
+.result{
+	padding: 20px;
+	width: 25vw;
+	display: flex;
+	direction: row;
+	justify-content: space-between;
+	font-size: 24px;
+}
+.mid_rate{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(orange,yellow);
+	height: 100px;
+	width: 100px;
+	color:white;
+}
+.dif_rate{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(green,blue);
+	height: 100px;
+	width: 100px;
+	color:white;
 }
