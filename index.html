@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/angular-datatables.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="color-word">
 	<header>
 		<div class="logo">
 			<span class="ferz">&#9813;</span>
@@ -22,18 +22,26 @@
 	<div class="content" ng-controller="rate">
 	<form>
 		<fieldset>
+			<div class="conteiner-field">
+			<div class="field-input">
 			<label for="optimistic">
 				Оптимистическая отценка
-				<input type="number" name="optimistic" ng-model="opt">
+				<input type="number" name="optimistic" ng-model="opt" class="indent1">
 			</label>
+			</div>
+			<div class="field-input">
 			<label for="normal">
 				Нормальная отценка
-				<input type="number" name="normal" ng-model="norm">
+				<input type="number" name="normal" ng-model="norm" class="indent2">
 			</label>
+			</div>
+			<div class="field-input">
 			<label for="pesemistic">
 				Пессиместическая отценка
-				<input type="number" name="pesemistic" ng-model="pes">
+				<input type="number" name="pesemistic" ng-model="pes" class="indent3">
 			</label>
+			</div>
+			</div>
 		</fieldset>
 	</form>
 	<div class="result">

@@ -1,8 +1,8 @@
 input{
-	display: block;
+	/* display: block; */
 }
 form{
-	display: inline-block;
+	/* display: inline-block; */
 	/*width: 50vw;*/
 }
 .green{
@@ -75,7 +75,8 @@ header{
 	margin-top: 10px;
 }
 .table_name{
-	font-size: 14px;
+	font-weight: 600;
+	font-size: 25px;
 	color: #6b1a1a;
 	margin-left: 20px;
 }
@@ -107,4 +108,48 @@ header{
 	height: 100px;
 	width: 100px;
 	color:white;
+}
+.content{
+		/* position: relative; */
+	/* background-image: url('../img/work.jpg'); */
+}
+.field-input{
+	/* display: flex;
+	flex-direction: row;
+	justify-content: center; */
+	margin-left: 30px;
+	margin-top: 10px
+}
+/* .conteiner-field{
+	display: flex;
+	flex-direction: row;
+} */
+.indent1{
+	margin-left: 37px;
+}
+/* label{
+	width: 600px;
+	display: inline-block;
+} */
+.indent2{
+	margin-left: 90px;
+}
+.indent3{
+	margin-left: 30px;
+}
+.color-word{
+	color: white;
+	background-color: #12483d;
+}
+body{
+	font-size: 20px;
+}
+.conteiner-field{
+	margin-left: 10%;
+	/* top: 50%;
+	left: 50%;
+	position: absolute; */
+	display: block;
+	width: 50%;
+	background-image: linear-gradient(blue,purple);
 }
