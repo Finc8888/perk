@@ -1,3 +1,6 @@
+body{
+	overflow: hidden;
+}
 input{
 	/* display: block; */
 }
@@ -28,7 +31,7 @@ form{
 
 header{
 	display: flex;
-	margin-bottom: 30px;
+	/*margin-bottom: 30px;*/
 	background-image: linear-gradient(#3c00ff,#00d2ff);
 	height:20vh;
 	position: relative;
@@ -74,21 +77,33 @@ header{
 	margin-left: 30px;
 	margin-top: 10px;
 }
+.table_info{
+	margin-left: 5vw;
+/*	display: flex;
+	flex-direction: block;*/
+}
+.result-group{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
 .table_name{
 	font-weight: 600;
 	font-size: 25px;
-	color: #6b1a1a;
+	color: rgba(255,255,255,0.9);;
 	margin-left: 20px;
 }
 .table{
 	overflow-x: auto;
+	width: 50vw;
+	color:black;
 }
 .result{
 	padding: 20px;
-	width: 25vw;
+	width: 100vw;
 	display: flex;
 	direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	font-size: 24px;
 }
 .mid_rate{
@@ -110,8 +125,9 @@ header{
 	color:white;
 }
 .content{
-		/* position: relative; */
-	/* background-image: url('../img/work.jpg'); */
+	position: relative;
+	background-image: url('../img/pert2_bg.jpg');
+	height: 80vh;
 }
 .field-input{
 	/* display: flex;
@@ -145,11 +161,11 @@ body{
 	font-size: 20px;
 }
 .conteiner-field{
-	margin-left: 10%;
+	margin-left: 5vw;
 	/* top: 50%;
 	left: 50%;
 	position: absolute; */
 	display: block;
-	width: 50%;
+	width: 50vw;
 	background-image: linear-gradient(blue,purple);
 }
