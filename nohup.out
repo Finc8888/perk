@@ -1,0 +1,40 @@
+[0504/163655.845399:ERROR:nss_util.cc(94)] Failed to create /home/gavroche/.pki/nssdb directory.
+[0504/163659.177977:ERROR:sandbox_linux.cc(343)] InitializeSandbox() called with multiple threads in process gpu-process. 
+[3833:3833:0504/163709.202681:562031413:ERROR:networkimpl.cc(300)] [AU] Send Request status: 6
+[3833:3833:0504/163709.202846:562031570:ERROR:networkimpl.cc(501)] [AU] Request sending failed. HTTP return code: 0
+[3833:3833:0504/163711.404750:564233485:ERROR:networkimpl.cc(300)] [AU] Send Request status: 6
+[3833:3833:0504/163711.404886:564233609:ERROR:networkimpl.cc(501)] [AU] Request sending failed. HTTP return code: 0
+[3833:3833:0504/163715.688163:568516894:ERROR:networkimpl.cc(300)] [AU] Send Request status: 6
+[3833:3833:0504/163715.688280:568517003:ERROR:networkimpl.cc(501)] [AU] Request sending failed. HTTP return code: 0
+[3833:3833:0504/163724.371949:577200680:ERROR:networkimpl.cc(300)] [AU] Send Request status: 6
+[3833:3833:0504/163724.372063:577200787:ERROR:networkimpl.cc(501)] [AU] Request sending failed. HTTP return code: 0
+[0504/163724.372579:ERROR:autoupdate_manager.cc(544)] [AU] An error reported by the checker
+[0504/163724.372670:ERROR:autoupdate_manager.cc(692)] [AU] "Check error" error occured while checking for the main update
+[0504/163736.260893:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.260988:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261006:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261022:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261038:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261054:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261069:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261084:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261099:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261114:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261129:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261144:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261159:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.261174:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.298585:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.298995:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.299097:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.299734:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.299848:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163736.317324:ERROR:blacklist.cc(191)] Invalid pattern 
+[0504/163800.767944:ERROR:component_updater_impl.cc(523)] [AU]Parsing of the autoupdate response failed.
+
+[0504/172117.174833:ERROR:gles2_cmd_decoder.cc(17403)] [.DisplayCompositor-0x10809d80]GL ERROR :GL_INVALID_OPERATION : glCreateAndConsumeTextureCHROMIUM: invalid mailbox name
+[0504/172117.187323:ERROR:gles2_cmd_decoder.cc(9636)] [.DisplayCompositor-0x10809d80]RENDER WARNING: texture bound to texture unit 0 is not renderable. It maybe non-power-of-2 and have incompatible texture filtering.
+[0504/172117.187482:ERROR:gles2_cmd_decoder.cc(17403)] [.DisplayCompositor-0x10809d80]GL ERROR :GL_INVALID_OPERATION : glCreateAndConsumeTextureCHROMIUM: invalid mailbox name
+[0504/172117.187534:ERROR:gles2_cmd_decoder.cc(9636)] [.DisplayCompositor-0x10809d80]RENDER WARNING: texture bound to texture unit 0 is not renderable. It maybe non-power-of-2 and have incompatible texture filtering.
+[0504/174602.638428:ERROR:cert_verify_proc_nss.cc(918)] CERT_PKIXVerifyCert for b.tml.io failed err=-8181
+Xlib: sequence lost (0x30000 > 0x2ffff) in reply type 0x0!
